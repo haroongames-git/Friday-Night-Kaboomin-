@@ -1,0 +1,12 @@
+{
+    "title": "Shit Song",
+    "bf": "mark",
+    "gf": "bean",
+    "opponent": "bean",
+    "positions": {
+        "bf": [x, y],
+        "gf": [x, y],
+        "opponent": [x, y]
+    }
+ }
+}

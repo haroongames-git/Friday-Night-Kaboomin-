@@ -1,0 +1,26 @@
+{
+    "tutorial": {
+        "title": "shit tutorial",
+        "songs": [
+            "tutorial"
+        ],
+        "nextWeek": "week1"
+    },
+    "week1": {
+        "title": "i'm her dad or smth",
+        "songs": [
+            "bopeebo",
+            "fresh",
+            "dadbattle"
+        ],
+        "nextWeek": "week2"
+    },
+    "week2": {
+        "title": "IT IS A SPOOKY MONTH",
+        "songs": [
+            "spookeez",
+            "south"
+        ],
+        "nextWeek": "none"
+    }
+}
