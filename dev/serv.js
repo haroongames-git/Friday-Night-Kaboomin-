@@ -44,7 +44,7 @@ app.get('/api/leaderboard', (req, res) => {
     })
 })
 
-app.ws('/', )
+app.ws('/', (ws, req) => {})
 
 app.use(express.static(path.join(__dirname, "..")));
 
