@@ -6,6 +6,7 @@ const db = new Database()
 const path = require("path");
 
 const app = express();
+require('express-ws')(app);
 
 db.list().then(keys => {
     if (keys.includes("leaderboard")) {
@@ -42,6 +43,8 @@ app.get('/api/leaderboard', (req, res) => {
         res.json(leaderboard)
     })
 })
+
+app.ws('/', )
 
 app.use(express.static(path.join(__dirname, "..")));
 
