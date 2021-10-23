@@ -31,7 +31,13 @@ app.get('/api/leaderboard', (req, res) => {
     db.get("leaderboard").then((res1) => {
         let leaderboard = JSON.parse(res1)
         leaderboard.sort(function(a, b){
-            return b.score-a.score
+            if (!req.query.order || req.query.order == "desc") {
+                return b.score-a.score
+            } else if (req.query.order == "asc") {
+                return a.score-b.score
+            } else {
+                return b.score-a.score
+            }
         });
         res.json(leaderboard)
     })
